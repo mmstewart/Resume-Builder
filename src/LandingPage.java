@@ -25,11 +25,14 @@ public class LandingPage extends JFrame implements ActionListener {
         setLayout(null);
         setSize(400,400);
         setVisible(true);
-
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        if(e.getSource() == b1) {
+            new Login();
+        } else {
+            new SignUp();
+        }
     }
 }
